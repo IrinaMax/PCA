@@ -1,0 +1,6 @@
+{
+  "name": "Pca  expedia  ggbiplot",
+  "tagline": "",
+  "body": "## Biplot constraction with predict for forwars selection subset\r\n    predict(pca_dest1, \r\n        newdata=tail(dest, 10))\r\n    library(devtools)\r\n    install_github(\"ggbiplot\", \"vqv\")\r\n    install.packages(\"vqv-ggbiplot-2623d7c.tar.gz\", repos=NULL, type=\"source\")\r\n\r\n    library(ggbiplot)\r\n    gpca1 <- ggbiplot(pca_dest1, obs.scale = 1, var.scale = 1, \r\n              circle = TRUE)\r\n    gpca1 <- gpca1 + scale_color_discrete(name = '')\r\n    gpca1 <- gpca1 + theme(legend.direction = 'horizontal', \r\n               legend.position = 'top')\r\nprint(g)",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
